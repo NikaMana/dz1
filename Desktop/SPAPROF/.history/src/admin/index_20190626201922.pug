@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio | admin
+  body
+    .wrapper.admin-wrapper
+      .maincontent
+        #app-root
+
+-
+  var obj = [
+    {
+    link: '<a href="#">ссылка</a>',
+    title: 'prop2'
+    },{
+    link: '<a href="#">ссылка2</a>',
+    title: 'prop2'
+    },{
+    link: '<a href="#">ссылка3</a>',
+    title: 'prop2'
+    }
+  ]
+
+each item in obj
+  .obj
+    .link Здесь будет !{item.link}
+    .title(data-title='${item.title}')
